@@ -1,0 +1,453 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+{% block body %}
+
+    <header id="header" class="header">
+        <div>
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h1 
+                            ><b>APNA WALA<br>E-BAZZAR FOR</b> <br> <span id="js-rotating">BUYERS, MERCHANTS, HOME BUSINESSES</span></h1>
+                            <p class="p-large">NO need to GO when you have NOGOZO! <br> India’s First Advanced Local E-Market Platform On Your Fingertips.</p>
+                            <a class="btn-solid-lg page-scroll" href="{% url 'mainapp:comming' %}"><i class="fab fa-google-play"></i>PLAY STORE</a>
+                        </div>
+                    </div> 
+                    <div class="col-lg-6">
+                        <div class="image-container">
+                            <img class="img-fluid" src="{% static 'mainapp/images/loading.png' %}" alt="alternative">
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+    </div> 
+    </header> 
+    
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>FEATURES</h2>
+                    <div class="p-heading p-large">NOGOZO provides its users a plethora of advanced features and valuable multifunctional assets for its Buyers, Merchants, Servicemen and home businesses.</div>
+                </div> 
+            </div> 
+            <div class="row">
+                <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-users"></i>CUSTOMERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-store"></i>MERCHANTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-home"></i>HOME BUSINESS</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="lenoTabsContent">
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <div class="col-lg-4">
+                                    <div class="card left-pane first">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">All in One E-Market</h4>
+                                                <p>Easy interface access to every Departmental store, Groceries, Dairy, Stationary, Plumbers, and many other essentials on your fingertips.</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa-compass"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Saves Money</h4>
+                                                <p>Compare the rates of the same product from multiple shops and find the best deal for you and save your extra expenses easily.</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="fas fa-rupee-sign"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card left-pane">
+                                        <div class="card-body">
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Hassle-Free Shopping</h4>
+                                                <p>Now shopping is easier than ever, just build a cart online and place the order. Avoid the crowd and pick your order in seconds in place of hours in shop queues.</p>
+                                            </div>
+                                            <div class="card-icon">
+                                                <i class="far fa-gem"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <img class="img-fluid" src="{% static 'mainapp/images/loading.png' %}" alt="alternative">
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card right-pane first">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-file-medical"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Health Care</h4>
+                                                <p>We protect you from CoronaVirus & Scorching Summer by helping you to avoid the close crowd contact or harsh weather conditions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-truck"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Flash Delivery</h4>
+                                                <p>We value your time and thus provide flash delivery at your doorstep in even less than an Hour.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card right-pane">
+                                        <div class="card-body">
+                                            <div class="card-icon">
+                                                <i class="fas fa-cube"></i>
+                                            </div>
+                                            <div class="text-wrapper">
+                                                <h4 class="card-title">Free Entertainment</h4>
+                                                <p>Waiting for the order to get delivered? Read interesting news, facts, blogs in diverse fields, and keep yourself entertained.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="{% static 'mainapp/images/loading.png' %}" alt="alternative">
+                                </div>
+
+                                <div class="col-md-8">
+                                    <div class="text-area">
+                                        <h3>Accelerate your business exponentially with us!</h3>
+                                        <p>Upgrade your Business and experience the future marketing at our platform with comfort.</p>
+                                    </div> 
+                                    <div class="icon-cards-area">
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-walking"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Multiply Your Customers</h4>
+                                                    <p>Dive in Humongous Online Market and Digitalize your Business with us to expand your consumer network beyond your streets at a rapid rate.</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-users"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Easy Crowd Handling</h4>
+                                                    <p>We will help you get the orders online so that you can pack the items beforehand, and handle the crowd effortlessly with no risk of corona spread and nuisance.</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="far fa-calendar-check"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Free Advertising Of Your Products</h4>
+                                                    <p>Got an item you want to sell? Advertise your product on our app and find the customers willing to buy the product. Make your brand with us effortlessly!</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-icon">
+                                                    <i class="fas fa-rupee-sign"></i>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Additional Income Source</h4>
+                                                    <p>Get additional customers from our app and sell the products online to add another income source in your arsenal. Also, we provide you multi conventional options for further treasure boost.</p>
+                                                </div>
+                                            </div>
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="icon-cards-area">
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-rupee-sign"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Free Business Platform</h4>
+                                                <p>We provide you an excel platform to equally stand with the market and grow your dream business digitally with us for absolutely no cost.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-walking"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Multiply Your customers</h4>
+                                                <p>Expand your reach of customers beyond the neighbors to get new customers resulting in Customer chain advertisement and tons of orders.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="fas fa-cube"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Express Earning Opportunity</h4>
+                                                <p>Increase your earnings exponentially on our platform to earn faster than your imagination.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-icon">
+                                                <i class="far fa-bookmark"></i>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Showcase Your every product/service</h4>
+                                                <p>Showcase your home business and make a brand value and name with us to flaunt in the market with confidence.</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    
+                                    <div class="text-area">
+                                        <h3>Build your home business with us and generate fancy revenue.</h3>
+                                        <p>An exceptional opportunity for the house businesses to build their shops without any investment boost of customers beyond the neighborhood.</p>
+                                    </div> 
+                                </div> 
+                                <div class="col-md-4">
+                                    <img class="img-fluid" src="{% static 'mainapp/images/loading.png' %}" alt="alternative">
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+
+     
+    <div id="preview" class="basic-1" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>INTRODUCTION</h2>
+                    <div class="p-heading p-large"></div>
+                </div> 
+            </div> 
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="image-container">
+                        <div class="video-wrapper">
+                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=BRnom86suJs" data-effect="fadeIn">
+                                <img class="img-fluid" src="{% static 'mainapp/images/video-frame.jpg' %}" alt="alternative">
+                                <span class="video-play-button">
+                                    <span></span>
+                                </span>
+                            </a>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div>  
+
+    <div id="details" class="basic-2">
+        <div class="container">
+            <h2>HOW WE WORK</h2> 
+            <div class="p-heading p-large">We provide you with the easiest interface to browse your city shops and help you get the best deals at your doorstep.</div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="{% static 'mainapp/images/details-1.png' %}" alt="alternative">
+                </div> 
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h3>Pin Your Location</h3>
+                        <p>We access your location to provide you the simplified web of nearby shops/services available in the area.</p>
+                       
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <div class="basic-3">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>Build your Cart</h3>
+                            <p>We got a crowd of products to satisfy your every inch need. Search for the items you wish and build the cart online.</p>
+                          
+                        </div> 
+                    </div> 
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="{% static 'mainapp/images/details-2.png' %}" alt="alternative">
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <div class="basic-3">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="{% static 'mainapp/images/details-3.png' %}" alt="alternative">
+                    </div> 
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>Place your order</h3>
+                            <p>Select the best deal in the market and place your order while relaxing on your fluffy couch.</p>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+    <div class="basic-3">
+        <div class="second">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-container">
+                            <h3>Pick Convenient Delivery option</h3>
+                            <p>Your convenience is our priority. You can either opt for self-delivery or home delivery with flexible payment options. We deliver your needs within minutes at your doorstep.</p>
+                        </div> 
+                    </div> 
+                    <div class="col-lg-6">
+                        <img class="img-fluid" src="{% static 'mainapp/images/details-4.png' %}" alt="alternative">
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+
+    <div class="slider-2">
+        <div class="container">
+            <h2>Screenshots</h2> <br><br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" style="width: 25rem;" src="{% static 'mainapp/images/1.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" style="width: 25rem;" src="{% static 'mainapp/images/2.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" style="width: 25rem;" src="{% static 'mainapp/images/3.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" style="width: 25rem;" src="{% static 'mainapp/images/4.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" style="width: 25rem;" src="{% static 'mainapp/images/5.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" style="width: 25rem;" src="{% static 'mainapp/images/6.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" style="width: 25rem;" src="{% static 'mainapp/images/7.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                        <img class="img-fluid" style="width: 25rem;" src="{% static 'mainapp/images/8.png' %}" alt="alternative">
+                                    </a>
+                                </div>
+
+                                
+                            </div> 
+                            
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            
+                        </div> 
+                    </div> 
+                    
+                </div> 
+            </div> 
+        </div> 
+    </div>     
+
+    <div class="basic-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="text-container">
+                        <h2>NOGOZO NOW! <span class="blue"></span></h2>
+                        <p class="p-large">What are you waiting for? Download NOGOZO now to surf in the future market and take numerous advantages and opportunities available at your fingertips.</p>
+                        
+                        <a class="btn-solid-lg" href="{% url 'mainapp:comming' %}"><i class="fab fa-google-play"></i>PLAY STORE</a>
+                    </div> 
+                </div> 
+                <div class="col-lg-6 col-xl-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="{% static 'mainapp/images/loading.png' %}" alt="alternative">
+                    </div> 
+                </div>
+            </div> 
+        </div> 
+    </div> 
+
+    <!-- Statistics 
+    <div class="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="counter">
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="1684">1</div>
+                            <p class="counter-info">Total Downloads</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="124">1</div>
+                            <p class="counter-info">Active Merchants</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="1472">1</div>
+                            <p class="counter-info">Happy Users</p>
+                        </div>
+                        <div class="cell">
+                            <div class="counter-value number-count" data-count="146">1</div>
+                            <p class="counter-info">Good Reviews</p>
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </div>
+    -->
+
+
+    {% endblock %}

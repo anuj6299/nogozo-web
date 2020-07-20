@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block body %}
+
+
+<div class="tabs">
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            <div class="text-container" style="color: aliceblue;">
+                <h1 style="margin-bottom: 15px;">{{article.article_title}}</h1>
+                <h6 style= "color: white; margin-bottom: 10px;"><i class="fas fa-pen-nib"></i> <a href="{{article.author_profile_link}}" style="color: white;">{{article.author}}</a> &nbsp; <i class="fas fa-clock"></i> {{article.date}}</h6>
+
+<img src="{{article.article_logo}}" style='height: 100%; width: 100%; margin-top: 15px; margin-bottom: 15px; object-fit: contain' /> 
+         
+            <p>{{ article.article_text|safe|linebreaks }}</p>
+            <p>{{ article.article_text2|safe|linebreaks }}</p>
+            <p>{{ article.article_text3|safe|linebreaks }}</p>
+                
+            </div> <!-- end of text-container -->
+             <!-- end of text-container -->
+        </div>
+    </div> <!-- end of row -->
+</div>
+
+    
+
+</div>
+    {% endblock %}
