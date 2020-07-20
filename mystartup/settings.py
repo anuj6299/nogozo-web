@@ -18,7 +18,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
-SECRET_KEY = '4g'
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = '477cq@yn)ru&j6*@g%vwvl!_s$x_=d0f)h0fm)$2=xu!*=#r*g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -76,10 +78,15 @@ WSGI_APPLICATION = 'mystartup.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dalbmagmspghta',
+        'USER' : 'pcxxbzzpxxipko',
+        'PASSWORD' : '58bbd2af9fe5d31f092a87e1ab2846f1ec8659cef0bbb0aae1c7cea874dc0b0b',
+        'HOST' : 'ec2-52-70-15-120.compute-1.amazonaws.com',
+        'PORT' : '5432'
     }
 }
 
